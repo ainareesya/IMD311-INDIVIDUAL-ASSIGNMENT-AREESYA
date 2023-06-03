@@ -1,0 +1,187 @@
+<html>
+<head>
+<title> HOME </title>
+  <link rel="stylesheet" href="ASSETS/CSS/style.css">
+</head>
+
+<a name="TOP_PAGE"> </a>
+
+<!--- navigation --->
+<div class="topnav">
+	<a href="gallery.html"> GALLERY </a>
+	<a href="work experience.html"> WORK EXPERIENCE </a>
+  	<a href="education and skills.html"> EDUCATION & SKILLS </a>
+	<a href="about me.html"> ABOUT ME </a>
+	<a href="index.html"> HOME </a>
+
+<div class="logo">	
+	<a href="https://kedah.uitm.edu.my/"> <img src="ASSETS/IMAGE/UITM.png" 	width="40px" align="left"></a> 
+</div>
+</div>
+
+<!--- IMAGE --->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="container">
+  <img src="ASSETS/IMAGE/BG.jpg" alt="ABSTRACT" class="image" style="width:100%" align:"center">
+  <div class="middle">
+    <div class="text"> WELCOME TO MY PAGE </div>
+  </div>
+</div>
+
+<br><br><br>
+
+<!---- MARQUEE ---->
+<hr>
+<hr width="100%" color="394867"></hr>
+<marquee class="blink" scrollamount="20"> FAVORITE PHOTOS </marquee>
+<hr width="100%" color="394867"></hr>
+<hr>
+<br><br><br>
+
+
+<!----- slideshow ----->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="ASSETS/IMAGE/CLOUD 1.jpg" style="width:100%">
+    <div class="text"> SUNGAI PETANI, KEDAH </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="ASSETS/IMAGE/CLOUD 2.jpg" style="width:100%">
+    <div class="text"> PANTAI TANJUNG DAWAI, KEDAH </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="ASSETS/IMAGE/CLOUD 3.jpg" style="width:100%">
+    <div class="text"> BALING, KEDAH </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="ASSETS/IMAGE/CLOUD 4.jpg" style="width:100%">
+    <div class="text"> GERIK, PERAK </div>
+  </div>
+
+ <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="ASSETS/IMAGE/CLOUD 5.jpg" style="width:100%">
+    <div class="text"> JAMBATAN SEMELING, KEDAH </div>
+  </div>
+
+ <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="ASSETS/IMAGE/CLOUD 6.jpg" style="width:100%">
+    <div class="text"> PANTAI CAHAYA BULAN, KELANTAN </div>
+  </div>
+
+<!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+<!---- JAVA SLIDESHOW ---->
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<br><br>
+
+<!---------------------------- INSERTING AUDIO  ----------------------------->
+<br><br>
+	<center> <p style="padding: 5px; background-color: #394867;"> <font size="20px" color="white" face="Arial"> <b><i> UiTM DI HATIKU 2021 </center> </b></i> </font> </p>
+
+<div align="center">
+<audio controls>
+	<source src="ASSETS/AUDIO/UiTM di Hatiku 2021.mp3" type="audio/mpeg">
+</audio>
+</div>
+
+<br><br>
+	<center> <p style="padding: 5px; background-color: #394867;"> <font size="20px" color="white" face="Arial"> <b><i> WAWASAN SETIA WARGA UiTM 2022 </center> </b></i> </font> </p>
+
+<div align="center">
+<audio controls>
+	<source src="ASSETS/AUDIO/Wawasan Setia Warga UiTM 2022.mp3" type="audio/mpeg">
+</audio>
+</div>
+<br><br>
+
+<!---------------------EMBEDDING A PDF FILE ---------------------------->
+<br><br>
+<hr>
+<hr width="100%" color="394867"></hr>
+<marquee class="blink" scrollamount="20"> PDF FILE </marquee>
+<hr width="100%" color="394867"></hr>
+<hr>
+<br><br>
+<center>
+<iframe src="ASSETS/FILE/PROFILE UITM.pdf" width="80%" height="70%">
+</iframe>
+</center>
+
+<br><br>
+<a href="#TOP_PAGE">
+<img src="ASSETS/IMAGE/POINTER UP.png" height="50px" width="50px" align="right">
+</a>
+<br><br><br>
+
+<!---- FOOTER ---->
+<footer class="footer">
+  <a name="WHATSAPP"> </a>
+<a href=" https://whatsapp.com/dl/" target="_blank"> <img src="ASSETS/IMAGE/WHATSAPP.png" width="4%"> </a>
+
+  <a name="INSTAGRAM"> </a>
+<a href="https://instagram.com/ayinreesyaa?igshid=ZDc4ODBmNjlmNQ==" target="_blank"> <img src="ASSETS/IMAGE/INSTAGRAM.png" width="4%"> </a>
+
+  <a name="GMAIL"> </a>
+<a href="https://www.facebook.com/profile.php?id=100093214838204" target="_blank"> <img src="ASSETS/IMAGE/FACEBOOK.png" width="4%"> </a> <br><br>
+	
+  <address> Click here to email me: <a href="mailto:ainareesya316@gmail.com"> <font color="#9BA4B5"> ainareesya316@gmail.com </font> </a> <br>
+</address>
+
+  <p> © COPYRIGHT AREESYA 2023. <br>
+</footer>
+</footer>
+
+</body>
+</html>

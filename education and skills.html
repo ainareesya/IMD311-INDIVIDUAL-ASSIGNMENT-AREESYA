@@ -1,0 +1,299 @@
+<html>
+<head>
+<title> EDUCATION & SKILLS </title>
+  <link rel="stylesheet" href="ASSETS/CSS/style.css">
+</head>
+
+<a name="TOP_PAGE"> </a>
+
+<!--- navigation --->
+<div class="topnav">
+	<a href="gallery.html"> GALLERY </a>
+	<a href="work experience.html"> WORK EXPERIENCE </a>
+  	<a href="education and skills.html"> EDUCATION & SKILLS </a>
+	<a href="about me.html"> ABOUT ME </a>
+	<a href="index.html"> HOME </a>
+
+<div class="logo">	
+	<a href="https://kedah.uitm.edu.my/"> <img src="ASSETS/IMAGE/UITM.png" 	width="40px" align="left"></a> 
+</div>
+</div>
+
+<!--- IMAGE --->
+<div class="img_container">
+  <img src="ASSETS/IMAGE/SKBBR.png" alt="Sekolah Bandar Baru Rawang" style="width:100%;">
+  <div class="text-block">
+    <h4> <i> Primary School </i> </h4>
+    <p style="font-family:Times New Roman"> Sekolah Bandar Baru Rawang </p>
+  </div>
+</div>
+
+<!----- OUTLINE SKBBR ----->
+<p class="dotted"> 
+	<b> I started school at <a href="https://ms.wikipedia.org/wiki/Sekolah_Kebangsaan_Bandar_Baru_Rawang" target="_blank" color="white"> "Sekolah Kebangsaan Bandar Baru Rawang" </a> since 2010 until 	2015. </b> 
+    
+<ul>
+  <li> <i> 2010 - Standard 1 </i> </li>
+  <li> <i> 2011 - Standard 2 </i> </li>
+  <li> <i> 2012 - Standard 3 </i> </li>
+  <li> <i> 2013 - Standard 4 </i> </li>
+  <li> <i> 2014 - Standard 5 </i> </li>
+  <li> <i> 2015 - Standard 6 </i> </li>
+</ul>
+</p>
+
+<!---- MARQUEE ---->
+<hr width="100%" color="394867"></hr>
+	<marquee direction="right" scrollamount="20"> 
+	<div class="h1"><h1 style="color: #394867;"> UPSR RESULT! &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; UPSR RESULT! &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; UPSR RESULT! &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; UPSR RESULT! &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; UPSR RESULT! </h1> </div></marquee>
+<hr width="100%" color="394867"></hr>   
+<br>
+
+<!----- COLUMN ----->
+<div id="btnContainer">
+  <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+  <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+</div>
+<br>
+
+<div class="row">
+  <div class="column" style="background-color:#0A2647;">
+    <div class="h3"> <h3 style="color: white;"> Bahasa Melayu - Pemahaman </h3> </div>
+    <p style="color: white;"> A </p>
+  
+</div>
+  <div class="column" style="background-color:#144272;">
+    <div class="h3"> <h3 style="color: white;"> Bahasa Melayu - Penulisan </h3></div>
+    <p style="color: white;"> A </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#205295;">
+  <div class="h3"> <h3 style="color: white;"> Bahasa Inggeris </h3></div>
+    <p style="color: white;"> A </p>
+  </div>
+  
+<div class="column" style="background-color:#2C74B3;">
+   <div class="h3"> <h3 style="color: white;"> Mathematics </h3></div>
+    <p style="color: white;"> C </p>
+  </div>
+
+</div>
+ <div class="column" style="background-color:#93BFCF;">
+  <div class="h3"> <h3 style="color: white;"> Science </h3></div>
+    <p style="color: white;"> B </p>
+  </div>
+</div>
+<br><br>
+
+<!----- JAVA COLUMN ----->
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+} 
+
+/* Optional: Add active class to the current button (highlight it) */
+var container = document.getElementById("btnContainer");
+var btns = container.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+<!---- GARING ---->
+<br><br>
+
+<div class="img_container">
+  <img src="ASSETS/IMAGE/GARING.jpg" alt="SMK Seri Garing" style="width:100%;">
+  <div class="text-block">
+    <h4> <i> High School </i> </h4>
+    <p style="font-family:Times New Roman"> Sekolah Menengah Kebangsaan Seri Garing </p>
+  </div>
+</div>
+
+<!----- OUTLINE SMK ----->
+<p class="dotted"> 
+	<b> I started high school at <a href="https://ms.wikipedia.org/wiki/Sekolah_Menengah_Kebangsaan_Seri_Garing" target="_blank" color="white"> "Sekolah Menengah Kebangsaan Seri Garing" </a> since 2016 until 2020. </b> 
+    
+<ul>
+  <li> <i> 2016 - Form 1 </i> </li>
+  <li> <i> 2017 - Form 2 </i> </li>
+  <li> <i> 2018 - Form 3 </i> </li>
+  <li> <i> 2019 - Form 4 </i> </li>
+  <li> <i> 2020 - Form 5 </i> </li>
+</ul>
+</p>
+
+<!---- MARQUEE ---->
+<hr width="100%" color="394867"></hr>
+	<marquee direction="right" scrollamount="20"> 
+	<div class="h1"><h1 style="color: #394867;"> SPM RESULT! &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; SPM RESULT! &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; SPM RESULT! &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; SPM RESULT! &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; SPM RESULT! </h1> </div></marquee>
+<hr width="100%" color="394867"></hr>   
+<br>
+
+<!----- COLUMN ----->
+<div id="btnContainer">
+  <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+  <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+</div>
+<br>
+
+<div class="row">
+  <div class="column" style="background-color:#0A2647;">
+    <div class="h3"> <h3 style="color: white;"> Bahasa Melayu </h3> </div>
+    <p style="color: white;"> A- </p>
+  
+</div>
+  <div class="column" style="background-color:#144272;">
+    <div class="h3"> <h3 style="color: white;"> Bahasa Inggeris </h3></div>
+    <p style="color: white;"> B </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#205295;">
+  <div class="h3"> <h3 style="color: white;"> Pendidikan Islam </h3></div>
+    <p style="color: white;"> A </p>
+  </div>
+  
+<div class="column" style="background-color:#2C74B3;">
+   <div class="h3"> <h3 style="color: white;"> Mathematics </h3></div>
+    <p style="color: white;"> B+ </p>
+  </div>
+
+</div>
+ <div class="column" style="background-color:#93BFCF;">
+  <div class="h3"> <h3 style="color: white;"> Science </h3></div>
+    <p style="color: white;"> A </p>
+  </div>
+</div>
+
+</div>
+ <div class="column" style="background-color:#C4DFDF;">
+  <div class="h3"> <h3 style="color: white;"> Prinsip Perakaunan </h3></div>
+    <p style="color: white;"> A- </p>
+  </div>
+</div>
+
+</div>
+ <div class="column" style="background-color:#2C74B3;">
+  <div class="h3"> <h3 style="color: white;"> Sejarah </h3></div>
+    <p style="color: white;"> A- </p>
+  </div>
+</div>
+
+</div>
+ <div class="column" style="background-color:#205295;">
+  <div class="h3"> <h3 style="color: white;"> Additional Science </h3></div>
+    <p style="color: white;"> C+ </p>
+  </div>
+</div>
+
+
+<br><br>
+
+<!--- IMAGE --->
+<div class="img_container">
+  <img src="ASSETS/IMAGE/UITM KEDAH.jpg" alt="Univeriti Teknologi MARA Cawangan Kedah" style="width:100%;">
+  <div class="text-block">
+    <h4> <i> University </i> </h4>
+    <p style="font-family:Times New Roman"> Univeriti Teknologi MARA Cawangan Kedah </p>
+  </div>
+</div>
+
+<!----- OUTLINE UITM ----->
+<p class="dotted"> 
+	<b> I entered university in <a href="https://kedah.uitm.edu.my/" target="_blank" color="white"> "UiTM Cawangan Kedah" </a> in Sungai Petani since 2021 until 2023. </b> 
+    
+<ul>
+  <li> <i> 2021 - 1st Semester </i> </li>
+  <li> <i> 2022 - 2nd Semester </i> </li>
+  <li> <i> 2023 - 3rd Semester </i> </li>
+  <li> <i> 2023 - 4th Semester </i> </li>
+</ul>
+</p>
+
+<!----- SKILLS ----->
+<table align="center">
+<tr>
+<hr width="40%" color="#537188" ></hr>
+<hr width="40%" color="black" ></hr>
+<marquee direction="down"> <h1> <center> <font size="20px" color="526D82" face="Georgia"> SKILLS </center> </h1> </marquee>
+<hr width="40%" color="black" ></hr>
+<hr width="40%" color="#537188" ></hr>
+</tr>
+</table>
+
+<ol class="expandable-list">
+  <li> <font size="5px" color="27374D" face="Times New Roman"> <b> <i> Adobe: </b> </i>Developed proficient skills in using Adobe software and allowed to create visually compelling designs and effectively communicate ideas through visual media: </font>
+  <ul> 
+  <li type="square"> Adobe Photoshop </li>
+  <li type="square"> Adobe InDesign </li>
+  <li type="square"> Adobe Animate </li>
+  </ul>
+  <li> <font size="5px" color="27374D" face="Times New Roman"> <b> <i> Adaptability:</b> </i> Being adaptable and open to change is crucial in today's dynamic work environment. Employers appreciate individuals who can quickly adjust to new situations and learn new skills. </font> </li>
+  
+  <li class="expandable hidden"> <font size="5px" color="27374D" face="Times New Roman"> <b> <i> Teamwork: </b> </i> Working well in a team and being able to collaborate with colleagues from diverse backgrounds is important for achieving common goals. </font> </li> 
+  
+  <li class="expandable hidden"> <font size="5px" color="27374D" face="Times New Roman"> <b> <i> Time Management: </b> </i> Efficiently managing time, setting priorities, and meeting deadlines demonstrate strong organizational skills and the ability to handle multiple tasks. </font> </li>
+  
+  <li class="expandable hidden"> <font size="5px" color="27374D" face="Times New Roman"> <b> <i> Research Skills: </b> </i> The ability to gather, analyze, and interpret information is essential for making informed decisions and contributing to evidence-based solutions. </font> </li>
+  
+  <li class="expandable hidden"> <font size="5px" color="27374D" face="Times New Roman"> <b> <i> Emotional Intelligence: </b> </i> Having emotional intelligence involves being aware of and managing emotions and effectively understanding and relating to others. It contributes to positive relationships and effective communication. </font> </li> </ol>
+<center> <button class="toggle-button">Read More</button> </center>
+
+<!----- JAVA READ MORE ----->
+<script>
+const button = document.querySelector('.toggle-button');
+const expandableItems = document.querySelectorAll('.expandable');
+
+button.addEventListener('click', function() {
+  expandableItems.forEach(function(item) {
+    item.classList.toggle('hidden');
+  });
+
+  if (button.textContent === 'Read More') {
+    button.textContent = 'Read Less';
+  } else {
+    button.textContent = 'Read More';
+  }
+});
+</script>
+
+
+<br>
+<a href="#TOP_PAGE">
+<img src="ASSETS/IMAGE/POINTER UP.png" height="50px" width="50px" align="right">
+</a>
+<br><br><br>
+
+<!---- FOOTER ---->
+<footer class="footer">
+	<p> © COPYRIGHT AREESYA 2023. <br>
+
+</footer>
+
+</body>
+</html>
